@@ -1,0 +1,93 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🧠 Cursor 上下文管理</text>
+
+  <!-- 中心的大脑图标 -->
+  <g transform="translate(350, 280)">
+    <circle cx="50" cy="50" r="45" fill="#1a73e8" stroke="#000000" stroke-width="3" filter="url(#sketch-border)"/>
+    <text x="50" y="58" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#ffffff" filter="url(#sketch-text)">AI 大脑</text>
+  </g>
+
+  <!-- 代码库索引 -->
+  <g transform="translate(50, 100)">
+    <rect width="180" height="120" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📁 代码库索引</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 文件结构分析</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 函数关系映射</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 依赖关系理解</text>
+  </g>
+
+  <!-- @ 符号引用 -->
+  <g transform="translate(570, 100)">
+    <rect width="180" height="120" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">@ 精确引用</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• @filename.js</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• @function_name</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• @ClassName</text>
+  </g>
+
+  <!-- 智能过滤 -->
+  <g transform="translate(50, 450)">
+    <rect width="180" height="120" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🔍 智能过滤</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• .cursorignore</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 相关性评分</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 动态优化</text>
+  </g>
+
+  <!-- 上下文窗口 -->
+  <g transform="translate(570, 450)">
+    <rect width="180" height="120" rx="15" ry="15" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📊 上下文窗口</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 令牌限制管理</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 优先级排序</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 自动截断</text>
+  </g>
+
+  <!-- 连接线到中心 -->
+  <g stroke-linecap="round" stroke="#1a73e8" stroke-width="2" fill="none" opacity="0.7">
+    <!-- 左上到中心 -->
+    <path d="M230 160 C270 160, 310 200, 350 250"/>
+    <!-- 右上到中心 -->
+    <path d="M570 160 C530 160, 490 200, 450 250"/>
+    <!-- 左下到中心 -->
+    <path d="M230 510 C270 510, 310 470, 350 420"/>
+    <!-- 右下到中心 -->
+    <path d="M570 510 C530 510, 490 470, 450 420"/>
+  </g>
+
+  <!-- 示例区域 -->
+  <g transform="translate(250, 80)">
+    <rect width="300" height="150" rx="15" ry="15" fill="#f8f9fa" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" filter="url(#sketch-border)"/>
+    <text x="150" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">💡 实际使用示例</text>
+    <line x1="15" y1="35" x2="285" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 代码示例 -->
+    <rect x="20" y="45" width="260" height="90" rx="5" ry="5" fill="#1e1e1e" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="60" font-family="Monaco, monospace" font-size="10" fill="#ffffff">// 使用@符号精确引用</text>
+    <text x="25" y="75" font-family="Monaco, monospace" font-size="10" fill="#ffffff">@utils/helper.js</text>
+    <text x="25" y="90" font-family="Monaco, monospace" font-size="10" fill="#ffffff">@components/Button</text>
+    <text x="25" y="105" font-family="Monaco, monospace" font-size="10" fill="#ffffff">@types/User</text>
+    <text x="25" y="120" font-family="Monaco, monospace" font-size="10" fill="#888888">// AI会理解这些引用的具体内容</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="400" y="590" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">🌟 强大的上下文管理让AI更好地理解你的项目</text>
+</svg> 

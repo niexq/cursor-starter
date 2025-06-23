@@ -1,0 +1,115 @@
+<svg width="100%" height="100%" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🤖 AI模型选择指南</text>
+
+  <!-- GPT-4 -->
+  <g transform="translate(50, 80)">
+    <rect width="250" height="180" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🧠 GPT-4</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✨ 特点</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 逻辑推理能力强</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 复杂架构设计</text>
+    <text x="20" y="105" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 多语言支持好</text>
+    
+    <text x="20" y="125" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">🎯 适用场景</text>
+    <text x="20" y="145" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 系统架构设计</text>
+    <text x="20" y="160" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 算法实现</text>
+    <text x="20" y="175" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 技术选型讨论</text>
+  </g>
+
+  <!-- Claude -->
+  <g transform="translate(325, 80)">
+    <rect width="250" height="180" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📚 Claude</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✨ 特点</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 代码审查专家</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 重构能力优秀</text>
+    <text x="20" y="105" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 安全意识强</text>
+    
+    <text x="20" y="125" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">🎯 适用场景</text>
+    <text x="20" y="145" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 代码重构</text>
+    <text x="20" y="160" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 性能优化</text>
+    <text x="20" y="175" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 安全审计</text>
+  </g>
+
+  <!-- Cursor特有模型 -->
+  <g transform="translate(600, 80)">
+    <rect width="250" height="180" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⚡ Cursor模型</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✨ 特点</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 专为编程优化</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 响应速度快</text>
+    <text x="20" y="105" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 上下文理解佳</text>
+    
+    <text x="20" y="125" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">🎯 适用场景</text>
+    <text x="20" y="145" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 日常编码</text>
+    <text x="20" y="160" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 快速原型</text>
+    <text x="20" y="175" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#000000" filter="url(#sketch-text)">• 代码补全</text>
+  </g>
+
+  <!-- 选择建议 -->
+  <g transform="translate(150, 300)">
+    <rect width="600" height="200" rx="15" ry="15" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="300" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">💡 模型选择建议</text>
+    <line x1="15" y1="35" x2="585" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 三列建议 -->
+    <g transform="translate(20, 50)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">🚀 新手推荐</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 从Cursor模型开始</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 速度快，易上手</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 适合学习基础操作</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">🎯 进阶使用</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• GPT-4处理复杂逻辑</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• Claude优化现有代码</text>
+      <text x="0" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 根据任务切换模型</text>
+    </g>
+    
+    <g transform="translate(220, 50)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">⚖️ 性能对比</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 速度: Cursor > Claude > GPT-4</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 复杂度: GPT-4 > Claude > Cursor</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 代码质量: Claude > GPT-4 > Cursor</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">💰 成本考虑</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 免费额度合理分配</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 简单任务用轻量模型</text>
+      <text x="0" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 复杂任务用强力模型</text>
+    </g>
+    
+    <g transform="translate(420, 50)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">🔧 实用技巧</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 设置默认模型</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 快捷键切换模型</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 项目级模型配置</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">📊 使用监控</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 查看使用统计</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 优化调用频率</text>
+      <text x="0" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 避免重复请求</text>
+    </g>
+  </g>
+
+  <!-- 底部总结 -->
+  <text x="450" y="550" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">🎯 选择合适的AI模型，让编程效率事半功倍！</text>
+</svg> 
