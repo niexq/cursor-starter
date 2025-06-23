@@ -1,4 +1,3 @@
-
 name: 部署文档
 
 on:
@@ -23,7 +22,8 @@ jobs:
 
       - name: 安装 pnpm
         uses: pnpm/action-setup@v4
-
+        with:
+          version: 9
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
