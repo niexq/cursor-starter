@@ -38,7 +38,14 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |
           pnpm run docs:build
-          > docs/.vuepress/dist/.nojekyll
+          echo "" > docs/.vuepress/dist/.nojekyll
+          
+      - name: 验证构建结果
+        run: |
+          echo "构建目录内容:"
+          ls -la docs/.vuepress/dist/
+          echo "检查关键文件:"
+          ls -la docs/.vuepress/dist/assets/ || echo "assets目录不存在"
 
       - name: 部署文档
         uses: JamesIves/github-pages-deploy-action@v4

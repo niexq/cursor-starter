@@ -4,6 +4,9 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
+  
+  // GitHub Pages部署路径配置
+  base: '/cursor-starter/',
 
   title: 'Cursor最佳实践',
   description: '持续更新的Cursor开发提效指南，让每一次编码都更高效',
@@ -55,5 +58,17 @@ export default defineUserConfig({
     }
   }),
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      build: {
+        // 确保静态资源正确处理
+        assetsInlineLimit: 0,
+      }
+    }
+  }),
+
+  // 确保在生产环境中正确处理路径
+  head: [
+    ['link', { rel: 'icon', href: '/cursor-starter/images/cursor-logo.svg' }]
+  ]
 })

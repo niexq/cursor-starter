@@ -111,9 +111,9 @@
 <h2 id="🚀-下一步学习路径" tabindex="-1"><a class="header-anchor" href="#🚀-下一步学习路径"><span>🚀 下一步学习路径</span></a></h2>
 <p>现在你已经掌握了基础用法，可以深入学习更多技巧：</p>
 <ol>
-<li><strong><RouteLink to="/practices/">核心实践</RouteLink></strong> - 学习高级的AI对话技巧</li>
-<li><strong><RouteLink to="/tips/">实用技巧</RouteLink></strong> - 掌握更多快捷键和工作流</li>
-<li><strong><RouteLink to="/advanced/">进阶技巧</RouteLink></strong> - 自定义规则和团队协作</li>
+<li><strong><a href="/practices/" target="_blank" rel="noopener noreferrer">核心实践</a></strong> - 学习高级的AI对话技巧</li>
+<li><strong><a href="/tips/" target="_blank" rel="noopener noreferrer">实用技巧</a></strong> - 掌握更多快捷键和工作流</li>
+<li><strong><a href="/advanced/" target="_blank" rel="noopener noreferrer">进阶技巧</a></strong> - 自定义规则和团队协作</li>
 </ol>
 <h2 id="💪-每日练习建议" tabindex="-1"><a class="header-anchor" href="#💪-每日练习建议"><span>💪 每日练习建议</span></a></h2>
 <ul>
@@ -126,7 +126,7 @@
 <blockquote>
 <p>💡 <strong>记住</strong>：Cursor是工具，思维才是核心。掌握了正确的使用方法，你会发现编程变得前所未有的高效和有趣！</p>
 </blockquote>
-<p><strong>准备好开始你的高效编程之旅了吗？</strong> <RouteLink to="/practices/">立即查看核心实践 →</RouteLink></p>
+<p><strong>准备好开始你的高效编程之旅了吗？</strong> <a href="/practices/" target="_blank" rel="noopener noreferrer">立即查看核心实践 →</a></p>
 </div></template>
 
 
