@@ -14,6 +14,7 @@ export default defineUserConfig({
     navbar: [
       '/',
       '/get-started',
+      '/cursor-basics',
       '/practices/',
       '/tips/',
       '/advanced/'

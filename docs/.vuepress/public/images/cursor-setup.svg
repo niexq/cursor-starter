@@ -1,0 +1,134 @@
+<svg width="100%" height="100%" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🛠️ Cursor 完整设置指南</text>
+
+  <!-- 步骤1：下载安装 -->
+  <g transform="translate(50, 80)">
+    <rect width="250" height="120" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">1️⃣ 下载安装</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 访问 cursor.com</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选择对应平台版本</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 一键导入VS Code配置</text>
+  </g>
+
+  <!-- 箭头1 -->
+  <g stroke-linecap="round">
+    <path d="M301 140 C322 140, 348 140, 370 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M355 135 C360 138, 365 140, 370 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M355 145 C360 142, 365 140, 370 140" stroke="#000000" stroke-width="2" fill="none"></path>
+  </g>
+
+  <!-- 步骤2：账户设置 -->
+  <g transform="translate(370, 80)">
+    <rect width="250" height="120" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">2️⃣ 账户设置</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 注册Cursor账户</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选择订阅计划</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 14天免费试用</text>
+  </g>
+
+  <!-- 向下箭头 -->
+  <g stroke-linecap="round">
+    <path d="M450 230 C450 251, 450 269, 450 290" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M445 275 C448 280, 450 285, 450 290" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M455 275 C452 280, 450 285, 450 290" stroke="#000000" stroke-width="2" fill="none"></path>
+  </g>
+
+  <!-- 步骤3：基础配置 -->
+  <g transform="translate(50, 290)">
+    <rect width="250" height="140" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">3️⃣ 基础配置</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 设置快捷键偏好</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选择主题和字体</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 配置代码格式化</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 导入常用扩展</text>
+  </g>
+
+  <!-- 步骤4：AI模型配置 -->
+  <g transform="translate(370, 290)">
+    <rect width="250" height="140" rx="15" ry="15" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="125" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">4️⃣ AI模型配置</text>
+    <line x1="15" y1="35" x2="235" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选择默认AI模型</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 配置API密钥(可选)</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 设置使用限制</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 调整响应速度</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <g stroke-linecap="round">
+    <path d="M301 360 C322 360, 348 360, 369 360" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M354 355 C359 358, 364 360, 369 360" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M354 365 C359 362, 364 360, 369 360" stroke="#000000" stroke-width="2" fill="none"></path>
+  </g>
+
+  <!-- 向下箭头到高级配置 -->
+  <g stroke-linecap="round">
+    <path d="M450 460 C450 481, 450 499, 450 520" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M445 505 C448 510, 450 515, 450 520" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M455 505 C452 510, 450 515, 450 520" stroke="#000000" stroke-width="2" fill="none"></path>
+  </g>
+
+  <!-- 步骤5：高级配置 -->
+  <g transform="translate(150, 520)">
+    <rect width="300" height="120" rx="15" ry="15" fill="#f0e8ff" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="150" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">5️⃣ 高级配置</text>
+    <line x1="15" y1="35" x2="285" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 创建.cursorignore文件  • 配置Rules规则</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 设置项目特定配置  • 团队协作设置</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 性能优化调整  • 安全设置配置</text>
+  </g>
+
+  <!-- 配置文件示例 -->
+  <g transform="translate(650, 80)">
+    <rect width="200" height="350" rx="15" ry="15" fill="#f8f9fa" stroke="#000000" stroke-width="2" stroke-dasharray="5,5" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📄 配置文件示例</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- .cursorignore -->
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">.cursorignore</text>
+    <rect x="20" y="60" width="160" height="80" rx="3" ry="3" fill="#1e1e1e" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="75" font-family="Monaco, monospace" font-size="9" fill="#ffffff">node_modules/</text>
+    <text x="25" y="88" font-family="Monaco, monospace" font-size="9" fill="#ffffff">dist/</text>
+    <text x="25" y="101" font-family="Monaco, monospace" font-size="9" fill="#ffffff">*.log</text>
+    <text x="25" y="114" font-family="Monaco, monospace" font-size="9" fill="#ffffff">.git/</text>
+    <text x="25" y="127" font-family="Monaco, monospace" font-size="9" fill="#ffffff">coverage/</text>
+    
+    <!-- .cursorrules -->
+    <text x="20" y="160" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">.cursorrules</text>
+    <rect x="20" y="165" width="160" height="100" rx="3" ry="3" fill="#1e1e1e" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="180" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Use TypeScript</text>
+    <text x="25" y="192" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Follow ESLint rules</text>
+    <text x="25" y="204" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Use React hooks</text>
+    <text x="25" y="216" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Prefer functional</text>
+    <text x="25" y="228" font-family="Monaco, monospace" font-size="8" fill="#ffffff">  components</text>
+    <text x="25" y="240" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Add error handling</text>
+    <text x="25" y="252" font-family="Monaco, monospace" font-size="8" fill="#ffffff">- Write unit tests</text>
+    
+    <!-- 快捷键提示 -->
+    <text x="20" y="285" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">⌨️ 快捷键</text>
+    <rect x="20" y="290" width="160" height="50" rx="3" ry="3" fill="#f0f0f0" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="305" font-family="Monaco, monospace" font-size="9" fill="#000000">Cmd+K: 内联编辑</text>
+    <text x="25" y="318" font-family="Monaco, monospace" font-size="9" fill="#000000">Cmd+L: 聊天对话</text>
+    <text x="25" y="331" font-family="Monaco, monospace" font-size="9" fill="#000000">Tab: 智能补全</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="450" y="680" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">🎉 完成设置后，你就拥有了一个强大的AI编程助手！</text>
+</svg> 

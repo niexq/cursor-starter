@@ -1,0 +1,78 @@
+<svg width="100%" height="100%" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎯 Cursor 核心功能概览</text>
+
+  <!-- 中心的Cursor Logo -->
+  <g transform="translate(375, 250)">
+    <circle cx="75" cy="75" r="60" fill="#1a73e8" stroke="#000000" stroke-width="3" filter="url(#sketch-border)"/>
+    <text x="75" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="20" text-anchor="middle" fill="#ffffff" filter="url(#sketch-text)">Cursor</text>
+  </g>
+
+  <!-- Tab补全 -->
+  <g transform="translate(100, 120)">
+    <rect width="180" height="100" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⚡ Tab补全</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 智能预测编辑</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 上下文感知</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 即时建议</text>
+  </g>
+
+  <!-- Cmd+K -->
+  <g transform="translate(620, 120)">
+    <rect width="180" height="100" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🚀 Cmd+K</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 内联快速编辑</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 精确修改</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 无缝集成</text>
+  </g>
+
+  <!-- AI Agent -->
+  <g transform="translate(100, 400)">
+    <rect width="180" height="100" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🤖 AI Agent</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 大规模编辑</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 上下文控制</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 自动修复</text>
+  </g>
+
+  <!-- 上下文管理 -->
+  <g transform="translate(620, 400)">
+    <rect width="180" height="100" rx="15" ry="15" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🧠 上下文管理</text>
+    <line x1="15" y1="35" x2="165" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 代码库索引</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• @ 符号引用</text>
+    <text x="20" y="90" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 智能理解</text>
+  </g>
+
+  <!-- 连接线 -->
+  <g stroke-linecap="round" stroke="#1a73e8" stroke-width="2" fill="none" opacity="0.6">
+    <!-- 左上到中心 -->
+    <path d="M280 170 C320 170, 360 200, 390 250"/>
+    <!-- 右上到中心 -->
+    <path d="M620 170 C580 170, 540 200, 510 250"/>
+    <!-- 左下到中心 -->
+    <path d="M280 450 C320 450, 360 400, 390 350"/>
+    <!-- 右下到中心 -->
+    <path d="M620 450 C580 450, 540 400, 510 350"/>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="450" y="570" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">💡 四大核心功能协同工作，打造完美的AI编程体验</text>
+</svg> 

@@ -1,0 +1,102 @@
+<svg width="100%" height="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⚡ Tab补全工作流程</text>
+
+  <!-- 步骤1：代码输入 -->
+  <g transform="translate(50, 80)">
+    <rect width="200" height="120" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">1️⃣ 开始输入</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 模拟代码编辑器 -->
+    <rect x="20" y="45" width="160" height="60" rx="5" ry="5" fill="#1e1e1e" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="60" font-family="Monaco, monospace" font-size="10" fill="#ffffff">function calc|</text>
+    <text x="25" y="75" font-family="Monaco, monospace" font-size="10" fill="#666666">// 光标位置</text>
+    <text x="25" y="90" font-family="Monaco, monospace" font-size="10" fill="#666666">// AI正在分析...</text>
+  </g>
+
+  <!-- 箭头1 -->
+  <g stroke-linecap="round">
+    <path d="M251 140 C272 140, 298 140, 320 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M305 135 C310 138, 315 140, 320 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M305 145 C310 142, 315 140, 320 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="285" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">分析</text>
+  </g>
+
+  <!-- 步骤2：AI分析 -->
+  <g transform="translate(320, 80)">
+    <rect width="200" height="120" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">2️⃣ AI分析</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">🔍 上下文分析</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">🎯 意图识别</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">⚡ 模式匹配</text>
+  </g>
+
+  <!-- 箭头2 -->
+  <g stroke-linecap="round">
+    <path d="M521 140 C542 140, 568 140, 590 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M575 135 C580 138, 585 140, 590 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M575 145 C580 142, 585 140, 590 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="555" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">建议</text>
+  </g>
+
+  <!-- 步骤3：建议显示 -->
+  <g transform="translate(590, 80)">
+    <rect width="160" height="120" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="80" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">3️⃣ 显示建议</text>
+    <line x1="15" y1="35" x2="145" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 建议代码 -->
+    <rect x="20" y="45" width="120" height="60" rx="5" ry="5" fill="#1e1e1e" stroke="#666666" stroke-width="1"/>
+    <text x="25" y="58" font-family="Monaco, monospace" font-size="9" fill="#ffffff">function calc</text>
+    <text x="25" y="70" font-family="Monaco, monospace" font-size="9" fill="#888888">ulate(a, b) {</text>
+    <text x="25" y="82" font-family="Monaco, monospace" font-size="9" fill="#888888">  return a + b;</text>
+    <text x="25" y="94" font-family="Monaco, monospace" font-size="9" fill="#888888">}</text>
+  </g>
+
+  <!-- 向下箭头 -->
+  <g stroke-linecap="round">
+    <path d="M400 230 C400 251, 400 269, 400 290" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M395 275 C398 280, 400 285, 400 290" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M405 275 C402 280, 400 285, 400 290" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="410" y="260" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">按Tab接受</text>
+  </g>
+
+  <!-- 步骤4：用户选择 -->
+  <g transform="translate(200, 290)">
+    <rect width="400" height="120" rx="15" ry="15" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="200" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">4️⃣ 用户选择</text>
+    <line x1="15" y1="35" x2="385" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 选择选项 -->
+    <g transform="translate(30, 50)">
+      <rect width="150" height="25" rx="5" ry="5" fill="#e8f4fd" stroke="#1a73e8" stroke-width="2" filter="url(#sketch-border)"/>
+      <text x="75" y="17" font-family="Comic Sans MS, Virgil, cursive" font-size="12" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">Tab - 接受建议</text>
+    </g>
+    
+    <g transform="translate(220, 50)">
+      <rect width="150" height="25" rx="5" ry="5" fill="#f7e8e8" stroke="#e83a1a" stroke-width="2" filter="url(#sketch-border)"/>
+      <text x="75" y="17" font-family="Comic Sans MS, Virgil, cursive" font-size="12" text-anchor="middle" fill="#e83a1a" filter="url(#sketch-text)">Esc - 忽略建议</text>
+    </g>
+    
+    <text x="200" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">或继续输入修改建议</text>
+  </g>
+
+  <!-- 底部提示 -->
+  <text x="400" y="460" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">💡 Tab补全让编程变得如此简单和高效！</text>
+</svg> 
