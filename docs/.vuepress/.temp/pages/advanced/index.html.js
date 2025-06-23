@@ -1,0 +1,3 @@
+import comp from "/Users/nuo/work/xq/cursor-starter/docs/.vuepress/.temp/pages/advanced/index.html.vue"
+const data = JSON.parse("{\"path\":\"/advanced/\",\"title\":\"🎯 进阶技巧\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"📚 本章内容\",\"slug\":\"📚-本章内容\",\"link\":\"#📚-本章内容\",\"children\":[{\"level\":3,\"title\":\"🛠️ 自定义规则\",\"slug\":\"🛠️-自定义规则\",\"link\":\"#🛠️-自定义规则\",\"children\":[]},{\"level\":3,\"title\":\"🔄 工作流优化\",\"slug\":\"🔄-工作流优化\",\"link\":\"#🔄-工作流优化\",\"children\":[]}]}],\"git\":{},\"filePathRelative\":\"advanced/README.md\"}")
+export { comp, data }

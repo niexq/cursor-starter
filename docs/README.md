@@ -1,33 +1,85 @@
 ---
 home: true
-title: Home
-heroImage: https://vuejs.press/images/hero.png
+title: Cursor最佳实践
+heroImage: /images/cursor-logo.svg
 actions:
-  - text: Get Started
+  - text: 开始学习 🚀
     link: /get-started.html
     type: primary
 
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: 实战技巧 💡
+    link: /practices/
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: 🔥 500次请求真的不够用？
+    details: 别再浪费宝贵的AI对话次数！学会这些技巧，让每次请求都物超所值，效率翻倍不是梦。
+  - title: 🎨 设计稿秒变代码
+    details: 从Figma到完美页面，一步到位。掌握设计稿转代码的最佳姿势，告别手工切图的痛苦。
+  - title: ⚡ 代码生成神器
+    details: Cmd+K、Cmd+L玩得溜，Tab补全用得妙。这些快捷键组合拳，让你的编码速度飞起来。
+  - title: 🧠 上下文管理大师
+    details: AI理解你的项目越深，生成的代码越精准。学会管理上下文，让AI成为你的贴心编程助手。
+  - title: 🎯 提示词艺术
+    details: 好的提示词胜过千行代码。掌握与AI对话的艺术，让每个需求都能被完美理解和执行。
+  - title: 🚀 持续更新迭代
+    details: 实战中不断总结，经验中持续提炼。这里记录的都是真正能提升开发效率的干货技巧。
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: 用心整理 | 持续更新 | 让每一行代码都更高效 ✨
 ---
 
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
+## 🎉 欢迎来到 Cursor 最佳实践指南
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+**这不是又一个枯燥的工具文档，而是一本实战血泪史的精华总结。**
+
+在这个AI编程工具遍地开花的时代，Cursor脱颖而出不是没有道理的。但是，工具再好，不会用也是白搭。很多开发者拿到Cursor后，要么把它当成普通的代码补全工具，要么因为不知道怎么有效利用AI能力而频繁踩坑。
+
+### 🤔 你是否遇到过这些问题？
+
+- **500次对话用完了，但感觉没干什么事？**
+- **AI生成的代码总是不符合预期？**
+- **设计稿在手，但不知道怎么快速转成代码？**
+- **想重构代码，但不知道从何下手？**
+- **调试bug时，AI总是答非所问？**
+
+如果你点头了，那这个指南就是为你准备的。
+
+### 💡 这里有什么？
+
+![AI工作流程](/images/ai-workflow.svg)
+
+我们不讲虚的，只分享真正能让你**开发效率翻倍**的实战技巧：
+
+#### 🔥 核心实践篇
+- **AI请求优化术**：500次真的不够？还是你不会用？
+- **设计稿转代码**：从截图到完美页面的最短路径
+- **代码生成策略**：让AI写出你想要的代码
+
+#### ⚡ 效率技巧篇
+- **快捷键组合拳**：Cmd+K、Cmd+L、Tab的完美配合
+- **提示词模板库**：拿来即用的高效提示词
+- **上下文管理**：让AI更懂你的项目
+
+#### 🎯 进阶技巧篇
+- **自定义规则**：打造专属的AI助手
+- **工作流优化**：从需求到部署的完整链路
+- **团队协作**：如何在团队中推广AI开发
+
+![效率提升技巧](/images/efficiency-tips.svg)
+
+### 🚀 开始你的高效编程之旅
+
+每个技巧都来自真实的开发场景，每个案例都经过实战验证。我们相信，掌握了这些最佳实践，你会发现：
+
+- ✅ **开发速度提升3-5倍**
+- ✅ **代码质量显著改善**  
+- ✅ **调试时间大幅减少**
+- ✅ **学习新技术更加轻松**
+
+**准备好了吗？让我们一起探索Cursor的无限可能！**
+
+---
+
+> 💬 **想要分享你的Cursor使用技巧？** 欢迎提交PR，让更多开发者受益！
+> 
+> 🌟 **觉得有用？** 给个Star支持一下，让更多人发现这个宝藏指南！

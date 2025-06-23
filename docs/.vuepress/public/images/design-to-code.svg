@@ -1,0 +1,114 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎨 设计稿转代码神技</text>
+
+  <!-- 设计稿 -->
+  <g transform="translate(50, 80)">
+    <rect width="160" height="120" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="80" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📱 设计稿</text>
+    <line x1="15" y1="35" x2="145" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 模拟设计稿内容 -->
+    <rect x="20" y="45" width="120" height="15" rx="3" ry="3" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+    <text x="80" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="8" text-anchor="middle" fill="#666666">Header</text>
+    
+    <rect x="20" y="65" width="120" height="40" rx="3" ry="3" fill="#ffffff" stroke="#666666" stroke-width="1"/>
+    <text x="80" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="8" text-anchor="middle" fill="#666666">Content Area</text>
+  </g>
+
+  <!-- 箭头1 -->
+  <g stroke-linecap="round">
+    <path d="M211 140 C232 140, 258 140, 280 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M265 135 C270 138, 275 140, 280 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M265 145 C270 142, 275 140, 280 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="245" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">分析</text>
+  </g>
+
+  <!-- 分析拆解 -->
+  <g transform="translate(280, 80)">
+    <rect width="160" height="120" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="80" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🔍 分析拆解</text>
+    <line x1="15" y1="35" x2="145" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 识别组件结构</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 提取样式信息</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 分析交互逻辑</text>
+  </g>
+
+  <!-- 箭头2 -->
+  <g stroke-linecap="round">
+    <path d="M441 140 C462 140, 488 140, 510 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M495 135 C500 138, 505 140, 510 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M495 145 C500 142, 505 140, 510 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="475" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">生成</text>
+  </g>
+
+  <!-- 代码生成 -->
+  <g transform="translate(510, 80)">
+    <rect width="160" height="120" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="80" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⚡ 代码生成</text>
+    <line x1="15" y1="35" x2="145" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 组件代码</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 样式代码</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 交互逻辑</text>
+  </g>
+
+  <!-- 关键技巧区域 -->
+  <g transform="translate(100, 250)">
+    <rect width="600" height="200" rx="20" ry="20" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="300" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎯 关键技巧详解</text>
+    <line x1="20" y1="40" x2="580" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 左侧技巧 -->
+    <g transform="translate(30, 60)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">📸 截图技巧</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 高清截图，包含完整界面</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 标注尺寸和间距信息</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 提供设计规范说明</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#e83a1a" filter="url(#sketch-text)">🧩 组件拆分</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 从外到内，逐层拆分</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 识别可复用组件</text>
+      <text x="0" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 先实现基础再添加细节</text>
+    </g>
+    
+    <!-- 右侧技巧 -->
+    <g transform="translate(320, 60)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#2d8f2d" filter="url(#sketch-text)">🎨 样式还原</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 使用CSS变量管理颜色</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• Flexbox/Grid实现布局</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 响应式设计考虑</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#9c27b0" filter="url(#sketch-text)">⚡ 提示词模板</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• "根据这个设计稿实现..."</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• "使用React+Tailwind"</text>
+      <text x="0" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• "确保移动端适配"</text>
+    </g>
+  </g>
+
+  <!-- 最佳实践流程 -->
+  <g transform="translate(50, 480)">
+    <rect width="700" height="80" rx="15" ry="15" fill="#f0e8ff" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="350" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🚀 最佳实践流程</text>
+    <line x1="20" y1="35" x2="680" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="30" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">1️⃣ 截图+标注 → 2️⃣ 组件拆分 → 3️⃣ 逐个实现 → 4️⃣ 样式调优 → 5️⃣ 交互完善</text>
+  </g>
+
+  <!-- 底部提示 -->
+  <text x="400" y="590" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">💡 记住：好的设计稿描述 = 完美的代码实现</text>
+</svg> 

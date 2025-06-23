@@ -1,0 +1,103 @@
+<svg width="100%" height="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🚀 Cursor 效率提升秘籍</text>
+
+  <!-- 快捷键技巧 -->
+  <g transform="translate(50, 80)">
+    <rect width="200" height="150" rx="15" ry="15" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⌨️ 快捷键神技</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <g transform="translate(15, 50)">
+      <rect width="170" height="20" rx="5" ry="5" fill="#ffffff" stroke="#1a73e8" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="14" font-family="Comic Sans MS, Virgil, cursive" font-size="11" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">Cmd+K 快速编辑</text>
+    </g>
+    
+    <g transform="translate(15, 75)">
+      <rect width="170" height="20" rx="5" ry="5" fill="#ffffff" stroke="#e83a1a" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="14" font-family="Comic Sans MS, Virgil, cursive" font-size="11" text-anchor="middle" fill="#e83a1a" filter="url(#sketch-text)">Cmd+L 聊天对话</text>
+    </g>
+    
+    <g transform="translate(15, 100)">
+      <rect width="170" height="20" rx="5" ry="5" fill="#ffffff" stroke="#2d8f2d" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="14" font-family="Comic Sans MS, Virgil, cursive" font-size="11" text-anchor="middle" fill="#2d8f2d" filter="url(#sketch-text)">Tab 智能补全</text>
+    </g>
+    
+    <text x="100" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">熟练掌握=效率翻倍</text>
+  </g>
+
+  <!-- 提示词优化 -->
+  <g transform="translate(300, 80)">
+    <rect width="200" height="150" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">💬 提示词艺术</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✓ 明确具体需求</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✓ 提供上下文</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✓ 分步骤描述</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">✓ 举例说明</text>
+    
+    <text x="100" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">好的提示=精准输出</text>
+  </g>
+
+  <!-- 上下文管理 -->
+  <g transform="translate(550, 80)">
+    <rect width="200" height="150" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🧠 上下文管理</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选择相关文件</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 引用关键代码</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 保持对话连贯</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 及时清理历史</text>
+    
+    <text x="100" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">上下文=AI理解力</text>
+  </g>
+
+  <!-- 高级技巧 -->
+  <g transform="translate(175, 270)">
+    <rect width="450" height="180" rx="20" ry="20" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="225" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎯 进阶实战技巧</text>
+    <line x1="20" y1="40" x2="430" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 左侧技巧 -->
+    <g transform="translate(30, 60)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#1a73e8" filter="url(#sketch-text)">🔥 500次请求不够用？</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 合并多个小需求为一次对话</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 使用 Cmd+K 替代聊天</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 精准描述减少来回</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#e83a1a" filter="url(#sketch-text)">🎨 设计稿转代码神技</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 截图+详细样式描述</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 分组件逐步实现</text>
+    </g>
+    
+    <!-- 右侧技巧 -->
+    <g transform="translate(240, 60)">
+      <text x="0" y="0" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#2d8f2d" filter="url(#sketch-text)">⚡ 代码重构利器</text>
+      <text x="0" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 选中代码+重构指令</text>
+      <text x="0" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 批量优化性能</text>
+      <text x="0" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 自动添加类型注解</text>
+      
+      <text x="0" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#9c27b0" filter="url(#sketch-text)">🐛 调试排错专家</text>
+      <text x="0" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 粘贴错误信息求解</text>
+      <text x="0" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 代码审查建议</text>
+    </g>
+  </g>
+
+  <!-- 底部金句 -->
+  <text x="400" y="480" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">🌟 记住：AI是工具，思维才是核心！</text>
+</svg> 

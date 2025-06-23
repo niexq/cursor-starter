@@ -1,0 +1,109 @@
+<svg width="100%" height="100%" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">Cursor AI 开发工作流</text>
+
+  <!-- 需求分析 -->
+  <g transform="translate(50, 80)">
+    <rect width="180" height="120" rx="20" ry="20" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">📋 需求分析</text>
+    <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="60" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 明确功能需求</text>
+    <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 设计技术方案</text>
+    <text x="20" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 准备提示词</text>
+  </g>
+
+  <!-- 箭头1 -->
+  <g stroke-linecap="round">
+    <path d="M231 140 C252 140, 329 140, 350 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M335 135 C340 138, 345 140, 350 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M335 145 C340 142, 345 140, 350 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="285" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">智能对话</text>
+  </g>
+
+  <!-- AI 对话 -->
+  <g transform="translate(350, 80)">
+    <rect width="180" height="120" rx="20" ry="20" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🤖 AI 对话</text>
+    <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="60" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• Cmd+K 快速生成</text>
+    <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• Cmd+L 聊天对话</text>
+    <text x="20" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 上下文感知</text>
+  </g>
+
+  <!-- 箭头2 -->
+  <g stroke-linecap="round">
+    <path d="M531 140 C552 140, 629 140, 650 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M635 135 C640 138, 645 140, 650 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M635 145 C640 142, 645 140, 650 140" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="585" y="130" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">代码生成</text>
+  </g>
+
+  <!-- 代码生成 -->
+  <g transform="translate(650, 80)">
+    <rect width="180" height="120" rx="20" ry="20" fill="#e8f4fd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">⚡ 代码生成</text>
+    <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="60" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 自动补全</text>
+    <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 重构优化</text>
+    <text x="20" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 错误修复</text>
+  </g>
+
+  <!-- 向下箭头 -->
+  <g stroke-linecap="round">
+    <path d="M440 230 C440 251, 440 329, 440 350" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M435 335 C438 340, 440 345, 440 350" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M445 335 C442 340, 440 345, 440 350" stroke="#000000" stroke-width="2" fill="none"></path>
+    <text x="450" y="285" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">测试验证</text>
+  </g>
+
+  <!-- 测试优化 -->
+  <g transform="translate(200, 350)">
+    <rect width="180" height="120" rx="20" ry="20" fill="#fff2e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🔍 测试优化</text>
+    <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="60" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 功能测试</text>
+    <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 性能优化</text>
+    <text x="20" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 迭代改进</text>
+  </g>
+
+  <!-- 部署发布 -->
+  <g transform="translate(500, 350)">
+    <rect width="180" height="120" rx="20" ry="20" fill="#f0e8ff" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="90" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🚀 部署发布</text>
+    <line x1="10" y1="40" x2="170" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    <text x="20" y="60" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 自动部署</text>
+    <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 版本管理</text>
+    <text x="20" y="100" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 监控反馈</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <g stroke-linecap="round">
+    <path d="M381 410 C402 410, 479 410, 500 410" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M485 405 C490 408, 495 410, 500 410" stroke="#000000" stroke-width="2" fill="none"></path>
+    <path d="M485 415 C490 412, 495 410, 500 410" stroke="#000000" stroke-width="2" fill="none"></path>
+  </g>
+
+  <!-- 反馈循环箭头 -->
+  <g stroke-linecap="round">
+    <path d="M200 380 C100 380, 100 120, 140 120" stroke="#1a73e8" stroke-width="2" fill="none" stroke-dasharray="5,5"></path>
+    <path d="M125 115 C130 118, 135 120, 140 120" stroke="#1a73e8" stroke-width="2" fill="none"></path>
+    <path d="M125 125 C130 122, 135 120, 140 120" stroke="#1a73e8" stroke-width="2" fill="none"></path>
+    <text x="70" y="250" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">持续迭代</text>
+  </g>
+
+  <!-- 底部提示 -->
+  <text x="450" y="550" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#666666" filter="url(#sketch-text)">💡 高效开发的秘诀：合理利用AI能力 + 不断优化工作流</text>
+</svg> 
