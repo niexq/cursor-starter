@@ -1,0 +1,118 @@
+<svg width="100%" height="100%" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- 滤镜定义 -->
+  <defs>
+    <!-- 边框滤镜 -->
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- 文字滤镜 -->
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">分层次对话策略：从战略到执行</text>
+
+  <!-- 第一层：战略规划 -->
+  <g transform="translate(50, 80)">
+    <rect width="800" height="140" rx="20" ry="20" fill="#fff3cd" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="400" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#856404" filter="url(#sketch-text)">🎯 第一层：战略规划</text>
+    <line x1="20" y1="35" x2="780" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 左侧内容 -->
+    <g transform="translate(30, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">📋 核心内容：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 整体架构设计</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 技术栈选择</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 核心挑战识别</text>
+      <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 解决方案规划</text>
+    </g>
+
+    <!-- 右侧示例 -->
+    <g transform="translate(400, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">💡 示例提问：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"我要开发一个在线协作文档编辑器"</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"请帮我设计整体架构和技术选型"</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"考虑实时协作、冲突解决等核心问题"</text>
+    </g>
+  </g>
+
+  <!-- 箭头1 -->
+  <g stroke-linecap="round" transform="translate(450, 230)">
+    <path d="M0 0 L0 30" stroke="#1a73e8" stroke-width="3" fill="none" filter="url(#sketch-border)"/>
+    <path d="M-5 25 L0 30 L5 25" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <text x="15" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">细化</text>
+  </g>
+
+  <!-- 第二层：战术实施 -->
+  <g transform="translate(50, 270)">
+    <rect width="800" height="140" rx="20" ry="20" fill="#d1ecf1" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="400" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#0c5460" filter="url(#sketch-text)">⚡ 第二层：战术实施</text>
+    <line x1="20" y1="35" x2="780" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 左侧内容 -->
+    <g transform="translate(30, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">🔧 核心内容：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 核心功能实现</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 组件设计开发</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• API接口设计</text>
+      <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 数据流管理</text>
+    </g>
+
+    <!-- 右侧示例 -->
+    <g transform="translate(400, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">💡 示例提问：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"基于上面的架构方案"</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"实现协作编辑核心组件"</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"包含Yjs集成和实时同步"</text>
+    </g>
+  </g>
+
+  <!-- 箭头2 -->
+  <g stroke-linecap="round" transform="translate(450, 420)">
+    <path d="M0 0 L0 30" stroke="#1a73e8" stroke-width="3" fill="none" filter="url(#sketch-border)"/>
+    <path d="M-5 25 L0 30 L5 25" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <text x="15" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#1a73e8" filter="url(#sketch-text)">优化</text>
+  </g>
+
+  <!-- 第三层：细节优化 -->
+  <g transform="translate(50, 460)">
+    <rect width="800" height="140" rx="20" ry="20" fill="#d4edda" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="400" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#155724" filter="url(#sketch-text)">🚀 第三层：细节优化</text>
+    <line x1="20" y1="35" x2="780" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <!-- 左侧内容 -->
+    <g transform="translate(30, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">✨ 核心内容：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 性能优化</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 用户体验完善</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 边界情况处理</text>
+      <text x="20" y="80" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 高级功能添加</text>
+    </g>
+
+    <!-- 右侧示例 -->
+    <g transform="translate(400, 50)">
+      <text x="0" y="15" font-family="Comic Sans MS, Virgil, cursive" font-size="14" fill="#000000" filter="url(#sketch-text)">💡 示例提问：</text>
+      <text x="20" y="35" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"在现有编辑器基础上"</text>
+      <text x="20" y="50" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"添加评论系统和版本历史"</text>
+      <text x="20" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="11" fill="#666" filter="url(#sketch-text)">"优化大文档加载性能"</text>
+    </g>
+  </g>
+
+  <!-- 右侧优势说明 -->
+  <g transform="translate(50, 620)">
+    <rect width="800" height="60" rx="15" ry="15" fill="#f8f9fa" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="400" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎯 分层对话的优势</text>
+    <text x="50" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 逻辑清晰，避免混乱</text>
+    <text x="250" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 上下文连贯，提高效率</text>
+    <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 循序渐进，降低复杂度</text>
+    <text x="650" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 质量保证，减少返工</text>
+  </g>
+</svg> 
