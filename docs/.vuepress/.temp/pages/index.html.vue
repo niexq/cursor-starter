@@ -15,7 +15,7 @@
 <p>我们不讲虚的，只分享真正能让你<strong>开发效率翻倍</strong>的实战技巧：</p>
 <h4 id="🔥-核心实践篇" tabindex="-1"><a class="header-anchor" href="#🔥-核心实践篇"><span>🔥 核心实践篇</span></a></h4>
 <ul>
-<li><strong>AI请求优化术</strong>：500次真的不够？还是你不会用？</li>
+<li><strong>AI工具对话技巧</strong>：500次真的不够？还是你不会用？</li>
 <li><strong>设计稿转代码</strong>：从截图到完美页面的最短路径</li>
 <li><strong>代码生成策略</strong>：让AI写出你想要的代码</li>
 </ul>

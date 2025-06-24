@@ -71,7 +71,7 @@
 <td width="33%">
 
 ### 🔥 **核心实践**
-- [AI请求优化术](docs/practices/ai-requests.md)
+- [AI工具对话技巧](docs/practices/ai-requests.md)
 - [设计稿转代码](docs/practices/design-to-code.md)
 - [代码生成策略](docs/practices/code-generation.md)
 

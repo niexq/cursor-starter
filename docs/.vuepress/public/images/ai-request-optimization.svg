@@ -1,0 +1,134 @@
+<svg width="100%" height="100%" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 滤镜定义 -->
+  <defs>
+    <!-- 边框滤镜 -->
+    <filter id="sketch-border" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="42" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <!-- 文字滤镜 -->
+    <filter id="sketch-text" x="-2%" y="-2%" width="104%" height="104%">
+      <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" seed="15" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="24" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">AI工具对话技巧：从新手到专家</text>
+
+  <!-- 新手阶段 -->
+  <g transform="translate(50, 80)">
+    <rect width="200" height="160" rx="15" ry="15" fill="#f7e8e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#e83a1a" filter="url(#sketch-text)">🤔 新手阶段</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 一句话提问</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 分散提问</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 不用@符号</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 默认模型</text>
+    <text x="20" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#666" filter="url(#sketch-text)">效率: 20%</text>
+  </g>
+
+  <!-- 进阶阶段 -->
+  <g transform="translate(350, 80)">
+    <rect width="200" height="160" rx="15" ry="15" fill="#e0f5e0" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">⚡ 进阶阶段</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 详细需求描述</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 批量处理</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 使用@引用</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 模型选择</text>
+    <text x="20" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#666" filter="url(#sketch-text)">效率: 70%</text>
+  </g>
+
+  <!-- 专家阶段 -->
+  <g transform="translate(650, 80)">
+    <rect width="200" height="160" rx="15" ry="15" fill="#e8f4ff" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="100" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="18" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">🚀 专家阶段</text>
+    <line x1="15" y1="35" x2="185" y2="35" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+    
+    <text x="20" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• Agent模式</text>
+    <text x="20" y="75" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 分层次对话</text>
+    <text x="20" y="95" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 模板化提问</text>
+    <text x="20" y="115" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 上下文复用</text>
+    <text x="20" y="135" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#666" filter="url(#sketch-text)">效率: 95%</text>
+  </g>
+
+  <!-- 箭头1：新手到进阶 -->
+  <g stroke-linecap="round">
+    <path d="M250 160 C280 160, 320 160, 350 160" stroke="#1a73e8" stroke-width="3" fill="none" filter="url(#sketch-border)"/>
+    <path d="M335 155 C340 158, 345 160, 350 160" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <path d="M335 165 C340 162, 345 160, 350 160" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <text x="300" y="150" font-family="Comic Sans MS, Virgil, cursive" font-size="12" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">学习</text>
+  </g>
+
+  <!-- 箭头2：进阶到专家 -->
+  <g stroke-linecap="round">
+    <path d="M550 160 C580 160, 620 160, 650 160" stroke="#1a73e8" stroke-width="3" fill="none" filter="url(#sketch-border)"/>
+    <path d="M635 155 C640 158, 645 160, 650 160" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <path d="M635 165 C640 162, 645 160, 650 160" stroke="#1a73e8" stroke-width="3" fill="none"/>
+    <text x="600" y="150" font-family="Comic Sans MS, Virgil, cursive" font-size="12" text-anchor="middle" fill="#1a73e8" filter="url(#sketch-text)">精通</text>
+  </g>
+
+  <!-- 核心技巧区域 -->
+  <g transform="translate(50, 280)">
+    <rect width="800" height="280" rx="20" ry="20" fill="#f8f9fa" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+    <text x="400" y="30" font-family="Comic Sans MS, Virgil, cursive" font-size="20" text-anchor="middle" fill="#000000" filter="url(#sketch-text)">🎯 核心优化技巧</text>
+    <line x1="20" y1="40" x2="780" y2="40" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+
+    <!-- 技巧1 -->
+    <g transform="translate(30, 60)">
+      <rect width="170" height="100" rx="10" ry="10" fill="#fff3cd" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#856404" filter="url(#sketch-text)">详细需求描述</text>
+      <text x="15" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 功能需求</text>
+      <text x="15" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 技术要求</text>
+      <text x="15" y="70" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 交互要求</text>
+      <text x="15" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 输出要求</text>
+    </g>
+
+    <!-- 技巧2 -->
+    <g transform="translate(220, 60)">
+      <rect width="170" height="100" rx="10" ry="10" fill="#d1ecf1" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#0c5460" filter="url(#sketch-text)">@符号引用</text>
+      <text x="15" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• @文件引用</text>
+      <text x="15" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• @函数引用</text>
+      <text x="15" y="70" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• @目录引用</text>
+      <text x="15" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 精确上下文</text>
+    </g>
+
+    <!-- 技巧3 -->
+    <g transform="translate(410, 60)">
+      <rect width="170" height="100" rx="10" ry="10" fill="#d4edda" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#155724" filter="url(#sketch-text)">分层次对话</text>
+      <text x="15" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 战略规划</text>
+      <text x="15" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 战术实施</text>
+      <text x="15" y="70" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 细节优化</text>
+      <text x="15" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 持续迭代</text>
+    </g>
+
+    <!-- 技巧4 -->
+    <g transform="translate(600, 60)">
+      <rect width="170" height="100" rx="10" ry="10" fill="#f8d7da" stroke="#000000" stroke-width="1" filter="url(#sketch-border)"/>
+      <text x="85" y="20" font-family="Comic Sans MS, Virgil, cursive" font-size="14" text-anchor="middle" fill="#721c24" filter="url(#sketch-text)">模型选择</text>
+      <text x="15" y="40" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• Claude-3.5-Sonnet</text>
+      <text x="15" y="55" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• Agent模式</text>
+      <text x="15" y="70" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 任务匹配</text>
+      <text x="15" y="85" font-family="Comic Sans MS, Virgil, cursive" font-size="10" fill="#000000" filter="url(#sketch-text)">• 质量优先</text>
+    </g>
+
+    <!-- 效果展示 -->
+    <g transform="translate(150, 180)">
+      <rect width="500" height="80" rx="15" ry="15" fill="#e8f5e8" stroke="#000000" stroke-width="2" filter="url(#sketch-border)"/>
+      <text x="250" y="25" font-family="Comic Sans MS, Virgil, cursive" font-size="16" text-anchor="middle" fill="#2d5a2d" filter="url(#sketch-text)">🎯 优化效果</text>
+      <text x="50" y="45" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 请求次数减少70%</text>
+      <text x="250" y="45" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 开发效率提升3-5倍</text>
+      <text x="50" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 代码质量显著提升</text>
+      <text x="250" y="65" font-family="Comic Sans MS, Virgil, cursive" font-size="12" fill="#000000" filter="url(#sketch-text)">• 项目一致性更好</text>
+    </g>
+  </g>
+</svg> 

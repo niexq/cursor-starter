@@ -1,7 +1,7 @@
 <template><div><h1 id="🔥-核心实践" tabindex="-1"><a class="header-anchor" href="#🔥-核心实践"><span>🔥 核心实践</span></a></h1>
 <p>这里是Cursor使用的核心实践技巧，每一个都经过实战验证，能够显著提升你的开发效率。</p>
 <h2 id="📚-本章内容" tabindex="-1"><a class="header-anchor" href="#📚-本章内容"><span>📚 本章内容</span></a></h2>
-<h3 id="🚀-ai请求优化术" tabindex="-1"><a class="header-anchor" href="#🚀-ai请求优化术"><span><RouteLink to="/practices/ai-requests.html">🚀 AI请求优化术</RouteLink></span></a></h3>
+<h3 id="🚀-ai工具对话技巧" tabindex="-1"><a class="header-anchor" href="#🚀-ai工具对话技巧"><span><RouteLink to="/practices/ai-requests.html">🚀 AI工具对话技巧</RouteLink></span></a></h3>
 <p><strong>500次请求真的不够用？还是你不会用？</strong></p>
 <p>学会这些技巧，让每次AI对话都物超所值：</p>
 <ul>
